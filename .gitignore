@@ -1,0 +1,6 @@
+atcoder_cookies.txt
+__pycache__/
+*.exe
+*.class
+.vscode/
+tests/
