@@ -45,7 +45,8 @@ function acc-submit-wrapper {
     if (Test-Path .\main.cpp) {
         acc s main.cpp
     } elseif (Test-Path .\main.py) {
-        acc s main.py
+        # Python(CPython 3.13.7)の言語ID: 6082 を選ぶために 1 を入力
+        "1" | acc s main.py
     } else {
         Write-Host "Neither main.cpp nor main.py found." -ForegroundColor Yellow
     }
